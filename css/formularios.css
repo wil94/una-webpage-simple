@@ -1,0 +1,76 @@
+.datos-form {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.datos-form label {
+    font-weight: 600;
+    font-size: 110%;
+    display: block;
+}
+
+.datos-form input, .datos-form select, .datos-form textarea {
+    font-family: 'Nunito', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e1e3e3;
+    height: 40px;
+
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-datos-enlinea {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.enlinea-izq {
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.enlinea-der {
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.datos-form-btn {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.datos-form-btn input {
+    font-family: 'Nunito', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+
+    background-color: #ff971d;
+    height: 40px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.datos-form-btn input:hover {
+    background-color: #5f6769;
+    color: #fff
+}

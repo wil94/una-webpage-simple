@@ -1,0 +1,342 @@
+body {
+    /*Aplicamos la fuente enlazada en el documento html a toda la pagina */
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #5f6769;
+
+    margin: 0;
+    background-color: #fff;
+
+}
+
+/*aplicando estilos a las etiquetas de enlace*/
+a {
+    /*quitando los subrayados y color azul por defecto*/
+    text-decoration: none;
+    color: #ff971d;
+    font-weight: 600;
+}
+
+/*aplicando estilos a las etiquetas h1, h2, h3, h4*/
+h1 {
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: #3e4344;
+}
+
+h2 {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #3e4344;
+}
+
+h3 {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #3e4344;
+}
+
+h4 {
+    font-size: 100%;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #3e4344;
+}
+
+p {
+    text-align: justify;
+}
+
+#encabezadoprincipal {
+    width: 100%;
+    height: 110px;
+    background-color:#f4f4f4;
+    /*colocando borde inferior*/
+    border-bottom: 1px solid#e1e3e3;
+}
+
+.contenedor {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.modulo {
+    height: 90px;
+    box-sizing: border-box;
+    line-height: 110px;
+}
+
+.mod-logo {
+    float: left;
+    padding-top: 10px;
+}
+
+#logoempresa {
+    width: 130px;
+    height: 110px;
+    margin: auto;
+}
+
+.mod-izq {
+    float: left;
+    margin-left: 40px;
+}
+
+.mod-izq a {
+    color: #5f6769;
+}
+
+/*hover es una pseudo clase que aplicara el estilo que indiquemos
+donde indiquemos cuando el cursor del mouse pase sobre el mencionado
+elemento.*/
+.mod-izq a:hover {
+    color: #3e4344;
+}
+
+.titulo-sitio {
+    font-size: 140%;
+}
+
+.mod-der {
+    float: right;
+}
+
+#menuprincipal {
+    font-size: 110%;
+}
+
+#menuprincipal a {
+    padding-right: 15px;
+    color: #5f6769;
+}
+
+#menuprincipal a:hover {
+    padding-right: 15px;
+    color: #ff971d;
+}
+
+#contenidoprincipal {
+    float: left;
+    padding-right: 15px;
+    width: 650px;
+    box-sizing: border-box;
+}
+
+.contacto-articulo {
+    font-size: 90%;
+}
+.fecha-articulo {
+    font-size: 70%;
+    color: #6fb98f;
+}
+
+.tabla-articulo {
+    /*border-collapse: collapse; para que las celdas compartan borde, seperate; para que cada celda tenga
+    su propio borde, es decir habra dos bordes entre celdas.*/
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.tabla-articulo caption {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.tabla-articulo th {
+    background-color: #3e4344;
+    color: #fff;
+    height: 35px;
+    font-size: 120%;
+    padding: 5px;
+}
+
+.tabla-articulo td {
+    padding: 5px;
+    border-bottom: 1px solid #3e4344;
+}
+
+.tabla-articulo tr:hover {
+    background-color: #e1e3e3;
+}
+
+.pie-articulo {
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    box-sizing: border-box;
+
+    font-size: 90%;
+
+    background-color: #e1e3e3;
+
+    /*propiedades para dar el redondeo a los bordes*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.mod-pie-art {
+    height: 100px;
+}
+
+.pie-art-izq {
+    float: left;
+    width: 20%;
+}
+
+.pie-art-der {
+    float: right;
+    width: 80%;
+    display: table;
+}
+
+.pie-art-der p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#enlacesrel {
+    float: right;
+    padding-left: 15px;
+    width: 260px;
+    box-sizing: border-box;
+}
+
+.contenedor-enlaces {
+    background-color: #f4f4f4;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.contenedor-enlaces h3 {
+    background-color: #e1e3e3;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+#colaboradoresdestacados {
+    display: block;
+    /*Para que no exista espacios entre el extremo izquierdo y el derecho*/
+    clear: both;
+    background-image: url(../imagenes/fondo-marinojpg.jpg);
+}
+
+#colaboradoresdestacados h2 {
+    color: #fff;
+}
+
+.info-colaborador {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.info-colaborador img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    background-color: #fff;
+    /*esta propiedad dara opacidad a las imagenes*/
+    opacity: 80%;
+}
+
+.info-colaborador span {
+    color: #fff;
+    display: block;
+}
+
+.contenedor-colaborardores {
+    text-align: center;
+}
+
+.cont-colaborador {
+    padding-bottom: 40px;
+    padding-top: 5px;
+}
+
+#redessociales {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#redessociales img {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#footerpagina {
+    background-color: #232020;
+    width: 100%;
+    height: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+.mod-pie-pag {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pie-pag-izq {
+    float: left;
+}
+
+.pie-pag-der {
+    float: right;
+}
+
+.pie-nombre-marca {
+    font-size: 200%;
+}
+
+.pie-derechos-aut {
+    font-size: 80%;
+}
+
+.mod-pie-pag address {
+    font-size: 80%;
+    padding-top: 10px;
+}

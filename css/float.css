@@ -1,0 +1,29 @@
+#principal {
+    width: 100%;
+    height: 120px;
+    background-color: brown;
+    padding: 5px;
+    box-sizing: border-box;
+}
+/*Como las secciones hijo de principal son flotantes esta seccion principal
+quedara como vacia, por lo que se debe dar una altura definida para que se vea.*/
+.modulo {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+}
+/*Cuando se aplique el estilo de esta clase, al decir float si esta es hijo
+de otro elemento este quedara como independiente, es decir sera flotante
+independientemente a su padre.*/
+.mod-izq {
+    float: left;
+    color: chartreuse;
+    text-align: center;
+}
+.mod-der {
+    float: right;
+    /*aplicar texto y peso como negrita*/
+    font-weight: 600;
+}

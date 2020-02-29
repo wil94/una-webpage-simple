@@ -1,0 +1,9 @@
+#FondoA {
+    background: url("../Archivos/batman.jpg");
+    background-position: center;
+    /*background-attachment: contain;*/
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

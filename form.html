@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/form.css">
+
+</head>
+<body>
+    <h1>Mi primer formulario HTML</h1>
+    <form id="miForm" action="">
+        <h2>Tipos de datos HTML basicos</h2>
+        <label for="in1">Dato 1:</label>
+        <input type="text" id="in1" name="campo1" required>
+        <br>
+        <br>
+
+        <input type="checkbox" id="in2" value="vall" name="campo2">
+        <label for="in2">Dato 2:</label>
+        <br>
+        <br>
+
+        <input type="password" id="in3" name="campo4" required>
+        <label for="in3">Dato 3:</label>
+        <br>
+        <br>
+
+        <!--cada radio debe tener un unico id pero deben pertenecer al mismo name si
+        estos tienen que estar asociados-->
+        <input type="radio" id="in4" name="grupoRadios"><label for="in4">Radio 1:</label>
+        <input type="radio" id="in5" name="grupoRadios"><label for="in5">Radio 2:</label>
+        <input type="radio" id="in6" name="grupoRadios"><label for="in6">Radio 3:</label>
+        <input type="radio" id="in7" name="grupoRadios"><label for="in7">Radio 4:</label>
+        <input type="radio" id="in8" name="grupoRadios"><label for="in8">Radio 5:</label>
+        <br>
+        <br>
+        <!--Desde HTML 5-->
+        <h2>Tipos de datos desde HTML 5</h2>
+        <label for="in9">Dato 9 Color</label>
+        <input type="color" id="in9">
+        <br>
+        <br>
+        
+        <label for="in10">Dato 9 Fecha</label>
+        <input type="date" id="in10">
+        <br>
+        <br>
+
+        <label for="in11">Dato 9 email</label>
+        <input type="email" id="in11">
+        <br>
+        <br>
+
+        <label for="in12">Dato 9 numero</label>
+        <input type="number" id="in12">
+        <br>
+        <br>
+
+        <input type="submit" name="btnenvio" value="Enviar mensaje">
+
+
+    </form>
+</body>
+</html>

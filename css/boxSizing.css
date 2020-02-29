@@ -1,0 +1,40 @@
+.prueba1 {
+    /*en este ejemplo se esumaran los pixeles tanto de width como heigth y seran 430 y 230 respectivamente*/
+    width: 400px;
+    height: 200px;
+    padding: 30px;
+    margin: 10px;
+    background-color: brown;
+    color: white;
+    /*Para alinear el texto contenido aqui*/
+    text-align: center;
+    line-height: 200px;
+}
+.prueba2 {
+    width: 400px;
+    height: 200px;
+    padding: 30px;
+    margin: 10px;
+    background-color: brown;
+    color: white;
+    /*si queremos que haga el padding sin afectar el tamaño deseado en el width y height se debe utilizar border-box,
+    hara valer el width y height*/
+    box-sizing: border-box;
+    text-align: center;
+    display: table;
+}
+
+.prueba2 p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.prueba3 {
+    width: 340px;
+    height: 140px;
+    padding: 30px;
+    margin: 10px;
+    background-color: brown;
+    color: white;
+    /*otra manera NO recomendada es restar del width y height lo que iria al padding para asi obtener 400 y 200 respectivamente*/
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso HTML y CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Williams">
+    <!-- keywords y description hara coincidir las palabras clave cuando alguien haga una busqueda por decirlo en google -->
+    <meta name="description" content="Curso de HTML 5 y estilosbasicos">
+    <meta name="keywords" content="curso html, curso css, html, css, estilos">
+    <!--para enlazar html con css-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--para hacer estilos directamente en esta pagina style, aunque lo mas recomendable es utilizar estilos en otro estilo-->
+    <!--link para la importacion de on font para la letra-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+    </style>
+    <!--para incrustar codigo js directamente en el archivo html-->
+    <script type="text/javascript">
+        console.log('Codigo JS dentro de HTML')
+    </script>
+</head>
+<body>
+    <!--Cabecera del documento-->
+    <header id="encabezadoprincipal">
+        <div class="contenedor">
+            <div class="modulo mod-logo">
+                <!--Imagen que enlazara al index-->
+                <a href="index.html">
+                    <img id="logoempresa" src="./imagenes/logo1.png" alt="En caso que no se puede mostrar la imagen, dire esto!" width="120" height="120">
+                </a>
+            </div>
+            <div class="modulo mod-izq">
+                <a href="index.html">
+                    <!--span contiene un texto generico-->
+                    <span class="titulo-sitio">Lucha por una fundacion</span>
+                </a>
+            </div>
+            <div class="modulo mod-der">
+                <!--Enlaces del sitio-->
+                <nav id="menuprincipal">
+                    <!--a realiza hiperenlaces a otros sitios-->
+                    <a href="index.html">Inicio</a>
+                    <a href="galeria.html">Galería</a>
+                    <!--target _blank ademas el enlace lo hara en una nueva pestaña-->
+                    <a href="contacto.html" target="_blank">Contáctenos</a>
+                </nav>
+            </div> 
+        </div>
+    </header>
+
+    <!--SECCION en div DENTRO DEL DOCUMENTO-->
+    <div class="contenedor">
+        <!--contenido peincipal de la pagina, SOLO PUEDE HABER UNO EN TODO EL DOCUMENTO-->
+        <main id="contenidoprincipal">
+            <!--Articulo define un contenido independiente dentro una seccion, al ser independiente puede contener otras etiquetas-->
+            <article>
+                <header>
+                    <h1>LUCHA POR UNA FUNDACION</h1>
+                    <!--address etiqueta para direcciones y contactos-->
+                    <address class="contacto-articulo">
+                        Escrito por: Williams Gutierrez <br>
+                        Email: <a href="mailto:wroger.gutierrez@gmail.com">wroger.gutierrez@gmail.com</a><br>
+                        Sitio web: <a href="http://utb.edu.bo/" target="_blank">Universidad Tecnológica</a>
+                    </address>
+                    <!--time etiqueta para mostrar fecha-->
+                    <time datetime="2020-01-23" class="fecha-articulo">23 de Enero de 2020</time>
+                </header>
+
+                <h2>Violencia contra Las mujeres</h2>
+                <p><i> La violencia contra mujeres y niñas es una violación grave de los derechos humanos.</i></p>
+                <!--u sirve para hacer un subrayado de un texto-->
+                <p>
+                    Su impacto puede ser inmediato como de largo alcance, e incluye múltiples consecuencias físicas,
+                    sexuales, psicológicas, e incluso mortales, para mujeres y niñas. Afecta negativamente el bienestar
+                    de las mujeres e impide su plena participación en la sociedad. Además de tener consecuencias negativas
+                    para las mujeres, la violencia también impacta su familia, comunidad y el país. Los altos costos asociados,
+                    que comprenden desde un aumento en gastos de atención de salud y servicios jurídicos a pérdidas de productividad,
+                    impactan en presupuestos públicos nacionales y representan un obstáculo al <u>desarrollo</u>.
+                </p>
+                <h3>Principales paises donde se incrementaron los casos de violencia</h3>
+                <!--ul, lista desordenada-->
+                <ul>
+                    <li>Bolivia</li>
+                    <li>Perú</li>
+                    <li>Colombia</li>
+                </ul>
+                <h3>Ciudades principales ordenados dentro de Bolivia</h3>
+                <!--ol, lista ordenada-->
+                <ol>
+                    <li>El Alto</li>
+                    <li>Cochabamba</li>
+                    <li>La Paz</li>
+                </ol>
+                <!--
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=ePIP_S9WMXc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                -->
+
+                <h2>Nuestras Soluciones</h2>
+                <!--strong, Hace un resalto como Negrita-->
+                <p>
+                    Colaboramos con gobiernos, organizaciones de la sociedad civil y otras instituciones para promover el fin
+                    de la violencia, <strong>aumentar la sensibilización sobre sus causas y consecuencias</strong> y fortalecer las capacidades
+                    de nuestras contrapartes para su prevención y respuesta. También promovemos la necesidad de cambiar normas
+                    y el comportamiento de hombres y niños, y abogamos por la equidad de género y los derechos de las mujeres.
+                </p>
+                <p>
+                    ONU Mujeres apoya la ampliación de acceso a respuestas multisectoriales de calidad para sobrevivientes,
+                    que incluyen seguridad, refugio, salud, justicia y otros servicios esenciales. Prestamos orientación para
+                    políticas públicas para ayudar a maximizar las inversiones destinadas a la prevención – la solución más rentable
+                    y de largo plazo para detener la violencia.
+                </p>
+
+                <!--etiqueta para declarar la estructura de una tabla-->
+                <table class="tabla-articulo">
+                    <!--caption, titulo que tendra la tabla-->
+                    <caption>
+                        Cifras por ciudad en lo que va del 2020
+                    </caption>
+                    <!--tr, indica una fila de la tabla-->
+                    <tr>
+                        <!--th, indica columnas de la tabla, de tipo CABECERA-->
+                        <th>Ciudad</th>
+                        <th>Cantidad victimas</th>
+                    </tr>
+                    <tr>
+                        <!--td, indica columna de tabla-->
+                        <td>El Alto</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Cochabamba</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>La Paz</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+
+                <footer class="pie-articulo">
+                    <div class="mod-pie-art pie-art-izq">
+                        <img src="./imagenes/logo2.png" alt="Foto Auto" width="100" height="100">
+                    </div>
+                    <div class="mod-pie-art pie-art-der">
+                        <p>Se debe incrementar los niveles de nuestra tolerancia para hacer frente a
+                            este mal que va creciendo cada día más.
+                         </p>
+                    </div>
+                </footer>
+            </article>
+        </main>
+        <!-- contenido adicional dentro de la seccion-->
+        <aside id="enlacesrel">
+            <div class="contenedor-enlaces">
+                <h3>Otras páginas de consulta</h3>
+                <p>Casos mas vistos de violencia <a href="https://www.unwomen.org/" target="_blank">Ver</a></p>
+                <p>Casos mas vistos de violencia <a href="https://www.unwomen.org/" target="_blank">Ver</a></p>
+                <p>Casos mas vistos de violencia <a href="https://www.unwomen.org/" target="_blank">Ver</a></p>
+            </div>
+            <div class="contenedor-enlaces">
+                <h3>Casos Locales</h3>
+                <p>Casos mas vistos de violencia <a href="https://www.unwomen.org/" target="_blank">Ver</a></p>
+                <p>Casos mas vistos de violencia <a href="https://www.unwomen.org/" target="_blank">Ver</a></p>
+                <p>Casos mas vistos de violencia <a href="https://www.unwomen.org/" target="_blank">Ver</a></p>
+            </div>
+            <div class="contenedor-enlaces">
+                <h3>Casos Internacionales</h3>
+                <p>Casos mas vistos de violencia <a href="https://www.unwomen.org/" target="_blank">Ver</a></p>
+                <p>Casos mas vistos de violencia <a href="https://www.unwomen.org/" target="_blank">Ver</a></p>
+                <p>Casos mas vistos de violencia <a href="https://www.unwomen.org/" target="_blank">Ver</a></p>
+            </div>
+            <div class="contenedor-enlaces">
+                <h3>Publicidad de nuestros Colaboradores</h3>
+                <a href="https://www.unwomen.org/" target="_blank">
+                    <img src="./imagenes/logo3.jpg" alt="descuentos!" width="150" height="150">
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!--Otra seccion-->
+    <section id="colaboradoresdestacados">
+        <div class="contenedor cont-colaborador">
+            <h2>Colaboradores destacados de la semana</h2>
+            <div class="contenedor-colaborardores">
+                <div class="info-colaborador">
+                    <img src="./imagenes/GitHub.png" alt="GitHub" width="150" height="150">
+                    <span>Colaborador 1</span>
+                </div>
+                <div class="info-colaborador">
+                    <img src="./imagenes/gitlab-icon-rgb.png" alt="GitLab" width="150" height="150">
+                    <span>Colaborador 2</span>
+                </div>
+                <div class="info-colaborador">
+                    <img src="./imagenes/microsoft.png" alt="Microsoft" width="150" height="150">
+                    <span>Colaborador 3</span>
+                </div>
+                <div class="info-colaborador">
+                    <img src="./imagenes/oracle-logo.png" alt="Oracle" width="150" height="150">
+                    <span>Colaborador 4</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="redessociales">
+        <a href="#"><img src="./imagenes/facebook.jpg" alt="" width="100" height="100"></a>
+        <a href="#"><img src="./imagenes/instagram.jpg" alt="" width="100" height="100"></a>
+        <a href="#"><img src="./imagenes/twitter.png" alt="" width="100" height="100"></a>
+    </section>
+
+    <!--Pie de pagina-->
+    <footer id="footerpagina">
+        <div class="contenedor">
+            <div class="mod-pie-pag pie-pag-izq">
+                <span class="pie-nombre-marca">Lucha por una fundación</span><br>
+                <span class="pie-derechos-aut">©2019 Todos los derechos están protegidos sobre el autor.</span>
+            </div>
+            <div class="mod-pie-pag pie-pag-der">
+                <address>
+                    Bolivia, La Paz <br>
+                    Calle Los Riscos 123 <br>
+                    Tel. 76745425
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

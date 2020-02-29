@@ -1,0 +1,44 @@
+/*en este ejemplo veremos los modos de visualizar las etiquetas html por defecto,
+ los divs se muestran por bloque y los spans en linea.
+ En bloque se visualizara en bloque de elemento y en linea el flujo de visualizacion
+ es similar a la de un parrafo.*/
+
+#contenedor1, #contenedor2, #contenedor3, #contenedor4 {
+    width: 100%;
+    background-color: beige;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#contenedor1 div {
+    background-color: chocolate;
+    margin: 10px;
+    padding: 5px;
+}
+
+#contenedor2 span {
+    background-color: chocolate;
+    margin: 10px;
+    padding: 5px;
+}
+
+#contenedor3 div {
+    background-color: chocolate;
+    margin: 10px;
+    padding: 5px;
+    /*Con esta propiedad indicaremos que las etiquetas div del tercer parrafo
+    estaran en linea de bloques, es decir como un parrafo de texto pero conservando
+    la estructura de bloques.*/
+    display: inline-block;
+}
+
+#contenedor4 span {
+    background-color: chocolate;
+    margin: 10px;
+    padding: 5px;
+    /*En este caso los span que tiene la estructura visual de ser en linea seran
+    cambiadas a estructura de bloque teniendo asi la misma visualizacion que en
+    el primer parrafo.*/
+    display: block;
+}
